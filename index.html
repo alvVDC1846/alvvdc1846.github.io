@@ -20,12 +20,12 @@
                     <h5>Álvaro García</h5>
                     <!--<p>Desarrollador</p>-->
                     <ul class="vertical menu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre mí</a></li>
-                        <li><a href="#">Tecnologías</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Artículos</a></li>
-                        <li><a href="#">Redes sociales</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobremi">Sobre mí</a></li>
+                        <li><a href="#tecnologias">Tecnologías</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#articulos">Artículos</a></li>
+                        <li><a href="#redes">Redes sociales</a></li>
                     </ul>
                 </div>
             </div>
@@ -80,7 +80,8 @@
                 autoScrolling: true,
                 scrollHorizontally: true,
                 scrollOverflow: true,
-                sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', 'slateblue', 'violet']
+                sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', 'slateblue', 'violet'],
+                anchors:['inicio', 'sobremi', 'tecnologias', 'proyectos', 'articulos', 'redes']
             });
             fullpage_api.setAllowScrolling(true);
         });
