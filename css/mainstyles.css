@@ -15,9 +15,14 @@
     margin-bottom: 2em;
 }
 
+/* Botón hamburguesa, para desplazar el menú */
 .menubotton {
     position: absolute;
     z-index: 1;
     margin-top: 1em;
     margin-left: 1em;
+}
+
+#section5 h2 {
+    font-size: 2rem;
 }
