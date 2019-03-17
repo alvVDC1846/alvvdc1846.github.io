@@ -41,6 +41,15 @@
                 <div id="fullpage">
                     <div class="section">
                         <h1>Álvaro García</h1>
+                        <h2>Desarrollador de aplicaciones multiplataforma</h2>
+                        <div id="section1row1" class="row">
+                            <div class="small-12 medium-6 large-5 columns">
+                                <img src="./img/icons/data.svg" alt="Ordenador ilustrando un lenguaje de marcas" height="200" width="200" class="float-right"/>                                
+                            </div>
+                            <div class="small-12 medium-6 large-5 columns">
+                                <img src="./img/icons/algorithm.svg" alt="Algoritmo en un diagrama de flujo" height="200" width="200" class="float-left"/>
+                            </div>
+                        </div>
                     </div>
                     <div class="section">
                         <h1>Sobre mí</h1>
@@ -63,6 +72,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/scrolloverflow.js" integrity="sha256-0j5jUtxpr8ixZzqE0ZNow+Kw9JUCrP7TeGp1872jg3w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js" integrity="sha256-9cdrK4zShdgZnYolOm4NJ/4EaOiDA9cI3CMLDF/AELE=" crossorigin="anonymous"></script>
     <script>
         $(document).foundation();
@@ -71,6 +81,7 @@
             $('#fullpage').fullpage({
                 autoScrolling: true,
                 scrollHorizontally: true,
+                scrollOverflow: true,
                 sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', 'slateblue', 'violet']
             });
             fullpage_api.setAllowScrolling(true);

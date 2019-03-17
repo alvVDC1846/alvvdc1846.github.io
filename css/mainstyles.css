@@ -5,3 +5,12 @@
     font-weight: 900;
 }
 
+.section h2 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#section1row1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
