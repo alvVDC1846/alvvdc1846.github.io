@@ -10,6 +10,12 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+.section p {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
 #section1row1 {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -25,4 +31,14 @@
 
 #section5 h2 {
     font-size: 2rem;
+}
+
+#section3 .row {
+    margin-top: 4em;
+}
+
+#section3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
