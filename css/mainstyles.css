@@ -69,3 +69,7 @@
 #ufw-slide .row {
     padding-left: 0.5em;
 }
+
+#foto {
+  border-radius: 50%;
+}
