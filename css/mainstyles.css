@@ -69,3 +69,9 @@
 #ufw-slide .row {
     padding-left: 0.5em;
 }
+
+#transfers-slide p {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 0px;
+}
