@@ -54,3 +54,18 @@
     top: 90%;
     opacity: 0.5;
 }
+
+#ufw-slide p {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+#ufw-slide span {
+    color: seagreen;
+}
+
+#ufw-slide .row {
+    padding-left: 0.5em;
+}

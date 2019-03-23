@@ -94,8 +94,21 @@
                             <h1>Artículos</h1>
                             <h2>Unos cuantos manuales, o más bien <em>"cheat-sheets"</em>, que suelo necesitar.</h2>
                         </div>
-                        <div class="slide">
+                        <div id="ufw-slide" class="slide">
                             <h1>Reglas de UFW</h1>
+                            <div class="row">
+                                <div class="small-12 medium-12 large-12 colums">
+                                    <p>Permitir un puerto</p>
+                                    <code>ufw allow <span>22</span></code>
+                                    <p>Permitir un puerto por TCP/UDP</p>
+                                    <code>ufw allow proto <span>tcp</span> from any to any port <span>80</span></code><br>
+                                    <code>ufw allow proto <span>udp</span> from any to any port <span>1194</span></code>
+                                    <p>Permitir un rango de IP</p>
+                                    <code>ufw allow from <span>10.8.0.0/24</span> to any port <span>443</span></code>
+                                    <p>Denegar una IP</p>
+                                    <code>ufw deny from <span>2.139.173.60</span></code>
+                                </div>
+                            </div>
                         </div>
                         <div class="slide">
                             <h1>Transferencias</h1>
