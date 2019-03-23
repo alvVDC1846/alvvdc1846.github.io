@@ -112,6 +112,26 @@
                         </div>
                         <div class="slide">
                             <h1>Transferencias</h1>
+                            <div class="row">
+                                <div class="small-12 medium-6 large-6 colums">
+                                    <h2>Sincronización</h2>
+                                    <code>rsync -r -v -h -e ssh folder/ user@ip:~/dest_folder/ --progress --stats --exclude dir</code>
+
+                                    <p>-r recurre a directorios y subdirectorios</p>
+                                    <p>-v verbose</p>
+                                    <p>-h unidades de tamaño comprensibles</p>
+                                    <p>-e ssh especifica ssh como shell remoto</p>
+                                    <p>--progress barra de progreso en cada archivo</p>
+                                    <p>--stats muestra las estadísticas al final</p>
+                                    <p>--exclude excluye un archivo o directorio</p>
+                                </div>
+                                <div class="small-12 medium-6 large-6 colums">
+                                    <h2>Transferencia</h2>
+                                    <code>scp -r -c arcfour folder/* user@ip:~/dest_folder/</code>
+                                    <p>-r recurre a directorios y subdirectorios</p>
+                                    <p>-c arcfour opción de cifrado, debe estar habilitada en el sshd</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="section">
