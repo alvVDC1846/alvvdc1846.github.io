@@ -77,3 +77,7 @@
 #my-info {
     background: white;
 }
+
+#my-info a {
+    color: #444444;
+}
