@@ -71,7 +71,7 @@
 }
 
 #foto {
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 
 #my-info {
@@ -80,4 +80,32 @@
 
 #my-info a {
     color: #444444;
+}
+
+#menu-top {
+    background: rgba(255, 99, 71, 0.7);
+}
+
+#menu-row {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#menu-row #foto, #menu-row h5, #menu-row h6, #menu-bottom {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+}
+
+#menu-row h5 { /* Álvaro García */
+    color: white;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+#menu-row h6 { /* Desarrollador */
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    padding-bottom: 0.2em;
 }
