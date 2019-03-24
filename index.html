@@ -17,19 +17,24 @@
     <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-left reveal-for-large" id="my-info" style="z-index: 15;" data-off-canvas data-position="left">
-                <div class="row column">
-                    <br>
-                    <img id="foto" class="thumbnail" src="./img/moto-caballete_entrada-andalucia_thumbnail.jpg">
-                    <h5>Álvaro García</h5>
+                <div id="menu-row" class="row column">
+                    <div id="menu-top">
+                        <br>
+                        <img id="foto" src="./img/moto-caballete_entrada-andalucia_thumbnail.jpg">
+                        <h5>Álvaro García</h5>
+                        <h6>Desarrollador</h6>
+                    </div>
                     <!--<p>Desarrollador</p>-->
-                    <ul class="vertical menu">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobremi">Sobre mí</a></li>
-                        <li><a href="#tecnologias">Tecnologías</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#articulos">Artículos</a></li>
-                        <li><a href="#redes">Redes sociales</a></li>
-                    </ul>
+                    <div id="menu-bottom">
+                        <ul class="vertical menu">
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#sobremi">Sobre mí</a></li>
+                            <li><a href="#tecnologias">Tecnologías</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#articulos">Artículos</a></li>
+                            <li><a href="#redes">Redes sociales</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="off-canvas-content" data-off-canvas-content>
@@ -159,7 +164,31 @@
                 scrollHorizontally: true,
                 scrollOverflow: true,
                 sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', 'slateblue', 'violet'],
-                anchors:['inicio', 'sobremi', 'tecnologias', 'proyectos', 'articulos', 'redes']
+                anchors:['inicio', 'sobremi', 'tecnologias', 'proyectos', 'articulos', 'redes'],
+
+                afterLoad: function(origin, destination, direction) {
+                    switch (destination.index)
+                    {
+                        case 0:
+                            document.getElementById('menu-top').style.background='rgba(255, 99, 71, 0.7)';
+                            break;
+                        case 1:
+                            document.getElementById('menu-top').style.background='rgba(255, 165, 0, 0.7)';
+                            break;
+                        case 2:
+                            document.getElementById('menu-top').style.background='rgba(30, 144, 255, 0.7)';
+                            break;
+                        case 3:
+                            document.getElementById('menu-top').style.background='rgba(60, 179, 113, 0.7)';
+                            break;
+                        case 4:
+                            document.getElementById('menu-top').style.background='rgba(106, 90, 205, 0.7)';
+                            break;
+                        case 5:
+                            document.getElementById('menu-top').style.background='rgba(238, 130, 238, 0.7)';
+                            break; 
+                    }
+                }
             });
             fullpage_api.setAllowScrolling(true);
         });
