@@ -13,41 +13,46 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. */
 
+// slateblue
+
 $(document).foundation();
+
+const sectionsColor = [
+    'tomato', 
+    'orange', 
+    'dodgerblue',
+
+    'mediumseagreen', 
+    '#d58f60', 
+    'violet'
+]
+
+const menuColors = [
+    'rgba(255, 99, 71, 0.7)',
+    'rgba(255, 165, 0, 0.7)',
+    'rgba(30, 144, 255, 0.7)',
+
+    'rgba(60, 179, 113, 0.7)',
+    'rgba(213, 143, 96, 0.7)',
+    'rgba(238, 130, 238, 0.7)'
+]
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
         autoScrolling: true,
         scrollHorizontally: true,
         scrollOverflow: true,
-        sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', 'slateblue', 'violet'],
+        sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', '#d58f60', 'violet'],
         anchors: ['inicio', 'sobremi', 'tecnologias', 'proyectos', 'articulos', 'redes'],
 
         afterLoad: function (origin, destination, direction) {
-            switch (destination.index) {
-                case 0:
-                    document.getElementById('menu-top').style.background = 'rgba(255, 99, 71, 0.7)';
-                    break;
-                case 1:
-                    document.getElementById('menu-top').style.background = 'rgba(255, 165, 0, 0.7)';
-                    break;
-                case 2:
-                    document.getElementById('menu-top').style.background = 'rgba(30, 144, 255, 0.7)';
-                    break;
-                case 3:
-                    document.getElementById('menu-top').style.background = 'rgba(60, 179, 113, 0.7)';
-                    break;
-                case 4:
-                    document.getElementById('menu-top').style.background = 'rgba(106, 90, 205, 0.7)';
-                    break;
-                case 5:
-                    document.getElementById('menu-top').style.background = 'rgba(238, 130, 238, 0.7)';
-                    break;
-            }
+            setMenuTopBackground(menuColors[destination.index])
         }
     });
     fullpage_api.setAllowScrolling(true);
 });
+
+const setMenuTopBackground = (string) => document.getElementById('menu-top').style.background = string
 
 $('.off-canvas a').on('click', function () {
     $('.off-canvas').foundation('close');

@@ -21,10 +21,11 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
     <title>Álvaro Portfolio</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css" integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css" integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/mainstyles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" integrity="sha512-kDmbIQZ10fxeKP5NSt3+tz77HO42IJiS+YPIirOIKTdokl4LtuXYo3NNvq9mTAF+rzdV1plp0sm9E6nvtVpnFQ==" crossorigin="anonymous" />
+
   </head>
 
   <body>
@@ -32,7 +33,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <div
           class="off-canvas position-left reveal-for-large"
-          id="my-info"
+          id="navDrawer"
           style="z-index: 15;"
           data-off-canvas
           data-position="left"
@@ -54,7 +55,6 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
                 <li><a href="#sobremi">Sobre mí</a></li>
                 <li><a href="#tecnologias">Tecnologías</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#articulos">Artículos</a></li>
                 <li><a href="#redes">Redes sociales</a></li>
               </ul>
             </div>
@@ -65,7 +65,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
             <button
               class="menu-icon"
               type="button"
-              data-toggle="my-info"
+              data-toggle="navDrawer"
             ></button>
           </div>
 
@@ -73,7 +73,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
             <div class="section" id="home">
               <h1>Álvaro García</h1>
               <h2>Desarrollador de aplicaciones multiplataforma</h2>
-              <div id="section1row1" class="row">
+              <div class="row">
                 <div class="small-12 medium-6 large-5 columns">
                   <img
                     src="./img/icons/data.svg"
@@ -107,28 +107,28 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
             </div>
             <div class="section" id="aboutme">
               <h1>Sobre mí</h1>
-              <p>Terminados los estudios de Sistemas Microinformáticos en Red (SMR) y Desarrollo de Aplicaciones Multiplataforma (DAM).</p>
-              <p>Apasionado por la programación y los sistemas informáticos. En continua formación.</p>
-              <p>Aficionado al deporte y al desarrollo personal.</p>
+              <h3>Terminados los estudios de Sistemas Microinformáticos en Red (SMR) y Desarrollo de Aplicaciones Multiplataforma (DAM).</h3>
+              <h3>Apasionado por la programación y los sistemas informáticos. En continua formación.</h3>
+              <h3>Aficionado al deporte y al desarrollo personal.</h3>
             </div>
-            <div id="section3" class="section">
+            <div id="technologies" class="section">
               <h1>Tecnologías</h1>
               
               <div class="row">
                 <div class="column small-12 large-4">
-                  <p>Sobre todo, he trabajado con:</p>
+                  <h3>Sobre todo, he trabajado con:</h3>
                   <img src="./img/logos/android-studio.png" alt="Logo de Android Studio" title="Android nativo">
                   <img src="./img/logos/kotlin.png" alt="Logo de Kotlin Lang" title="Kotlin">
                 </div>
 
                 <div class="column small-12 large-4">
-                  <p>También he tocado un poco de:</p>
+                  <h3>También he tocado un poco de:</h3>
                   <img src="./img/logos/ionic.png" alt="Logo de Ionic" title="Ionic">
                   <img src="./img/logos/node.png" alt="Logo de NodeJS" title="NodeJS">
                 </div>
 
                 <div class="column small-12 large-4">
-                  <p>Ahora estoy aprendiendo:</p>
+                  <h3>Ahora estoy aprendiendo:</h3>
                   <img src="./img/logos/flutter.png" alt="Logo de Flutter" title="Flutter">
                   <img src="./img/logos/dart.png" alt="Logo de Dart" title="Dart">
                 </div>
@@ -141,18 +141,191 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
             </div>
             <div class="section" id="projects">
               <h1>Proyectos</h1>
+              <p><i class="fi-arrow-down"></i></p>
             </div>
-            <div id="section5" class="section">
+            <div id="secondlife" class="section">
               <div class="slide">
-                <h1>Artículos</h1>
+                <h1>SecondLife</h1>
                 <h2>
-                  Texto
+                  Aplicación para publicar artículos de segunda mano.
                 </h2>
+
+                <div class="row">
+                  <div class="column small-12 large-6">
+                    <p>SecondLife permite el registro de usuarios que podrán publicar artículos que quieran vender.</p>
+                    <p>Incluye registro e inicio de sesión de usuarios, publicación de artículos y edición de los mismos por parte del autor.</p>
+
+                    <p>Este proyecto fue realizado como parte de la evaluación final de los módulos de Desarrollo de Interfaces y Programación de Servicios y Procesos.</p>
+                    <p>El desarrollo se llevó acabo de forma conjunta con un compañero de clase, siguiendo una organización mediante la división de tareas divididas a su vez en otras más pequeñas. 
+                      Esto se hizo mediante issues, tags y milestones en Gitlab.</p>
+                  </div>
+                  <div class="column small-12 large-6">
+                    <img src="./img/secondlife/main.png">
+                  </div>
+                </div>
               </div>
+
+              <div class="slide">
+                <h2>Características técnicas</h2>
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    
+                    <div class="card">
+                      <div class="card-divider">
+                        <h6>Backend</h6>
+                      </div>
+
+                      <div class="card-section">
+                        <ul>
+                          <li>API REST</li>
+                          <li>NodeJS</li>
+                          <li>Express</li>
+                          <li>MongoDB</li>
+                          <li>Mongoose</li>
+                          <li>JWT</li>
+                          <li>Docker Compose</li>
+                        </ul>                
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <div class="card">
+                      <div class="card-divider">
+                        <h6>Frontend</h6>
+                      </div>
+
+                      <div class="card-section">
+                        <ul>
+                          <li>Android nativo</li>
+                          <li>Kotlin</li>
+                          <li>MVVM</li>
+                          <li>Lifecycle</li>
+                          <li>LiveData</li>
+                          <li>Retrofit</li>
+                          <li>Volley</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Pantalla principal</h2>
+                    <p>Al inicio se pueden observar todos los artículos no vendidos publicados por los usuarios.</p>
+                    <p>Para poder ver el detalle de un anuncio o añadir uno, habrá que tener la sesión iniciada.</p>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/home.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Inicio de sesión</h2>
+                    <p>Al pulsar sobre un anuncio, sobre añadir uno o al pulsar en el botón de iniciar sesión en el menú, aparecerá el siguiente fragmento.</p>
+                    <p>Desde aquí podremos iniciar sesión o acceder al fragmento de registro.</p>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/login.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Menú lateral</h2>
+                    <p>En este Navigation Drawer podemos si tenemos la sesión iniciada.</p>
+                    <p>Desde este menú podremos acceder a nuestro perfil, controles de sesión, categorías de productos y anuncios propios.</p>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/drawer.png">                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Perfil</h2>
+                    <p>Desde la pantalla de perfil podremos cambiar nuestros datos, siendo los más relevantes la foto, nombre y primer apellido y número de contacto.</p>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/profile.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Nuevo anuncio</h2>
+                    <p>Pulsando en el botón de la esquina inferior derecha de la pantalla de inicio, accederemos a la vista para añadir un producto.</p>
+                    <p>Rellenaremos los campos de texto, así como cargar todas las fotos que deseemos.</p>
+
+                    <div class="callout secondary">
+                      <h5>Carga de fotos</h5>
+                      <p>Al pulsar sobre el botón de cargar una foto el usuario verá un Chooser inflado mediante un Intent. 
+                        Cuando pulsa sobre una, el texto del botón cambia por el nombre de la imagen, y se añade un nuevo botón debajo para seguir añadiendo más.
+                      </p>
+                      <p>En cuanto a la persistencia, una vez el usuario decide guardar el producto, la imagen se convierte a base64 para mandarla al backend. 
+                        Desde el backend, al recibir el base64, se escribe mediante un buffer la imagen en un archivo .jpg, dentro de una carpeta para las fotos.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/newProduct.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Detalle de un producto propio</h2>
+                    <p>Cuando pulsamos sobre un producto en la lista, nos llevará al detalle.</p>
+                    <p>Si el producto es de nuestra autoría, el botón inferior nos dará la opción de editarlo.</p>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/ownProductDetail.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Detalle de un producto</h2>
+                    <p>Si el producto no es nuestro, en lugar de darnos la opción de editarlo, nos dará la opción de contactar con el vendedor.</p>
+                    <p>Al pulsar sobre el botón de contactar, nos mostrará mediante un Intent el dial con el número de teléfono del usuario introducido.</p>
+
+                    <div class="callout secondary">
+                      <h5>Control de edición</h5>
+                      <p>Los productos solo podrán ser editados por el mismo usuario que los creó. Esto está controlado tanto en el frontend como en el backend.</p>
+                    </div>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/secondlife/productDetail.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <a href="#redes"><h2>¿Quiéres saber más?</h2></a>
+              </div>
+
             </div>
             <div id="social" class="section">
               <h1>Redes sociales</h1>
-              <p>Conóceme más:</p>
+              <h3>Conóceme más:</h3>
 
               <div class="row">
                 <div class="column small-12 large-6">

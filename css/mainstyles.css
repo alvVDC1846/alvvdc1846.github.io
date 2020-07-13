@@ -13,27 +13,29 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. */
 
-.section h1 {
+h1 {
     text-align: center;
     font-size: 7.5vw;
     color: white;
     font-weight: 900;
 }
 
-.section h2 {
+h2 {
     text-align: center;
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.section p {
+h3 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
 }
 
-#section1row1 {
-    margin-top: 2em;
-    margin-bottom: 2em;
+p {
+    text-align: justify;
+    font-size: 1rem;
+    color: white;
 }
 
 /* Botón hamburguesa, para desplazar el menú */
@@ -44,62 +46,16 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. *
     margin-left: 1em;
 }
 
-#section5 h2 {
-    font-size: 2rem;
-}
-
-#section3 h1 {
-    padding-top: 0px;
-    margin-top: 0.4em;
-}
-
-#section3 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 200px;
-    max-width: auto;
-    padding: 1em;
-}
-
-#section4-subp {
-    text-align: left;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 2em;
-}
-
-.fp-controlArrow {
+/* .fp-controlArrow {
     top: 90%;
     opacity: 0.5;
-}
+} */
 
-#ufw-slide p {
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 0px;
-}
-
-#ufw-slide span {
-    color: seagreen;
-}
-
-#ufw-slide .row {
-    padding-left: 0.5em;
-}
-
-#transfers-slide p {
-    font-size: 1em;
-    text-align: left;
-    margin-bottom: 0px;
-}
-
-#my-info {
+#navDrawer {
     background: white;
 }
 
-#my-info a {
+#navDrawer a {
     color: #444444;
 }
 
@@ -131,11 +87,26 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. *
     padding-bottom: 0.2em;
 }
 
-#social img {
+/* HOME */
+#home .row {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+/* TECHNOLOGIES */
+#technologies h1 {
+    padding-top: 0px;
+    margin-top: 0.4em;
+}
+
+#technologies img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
+    max-height: 200px;
+    max-width: auto;
+    padding: 1em;
 }
 
 #databases {
@@ -144,6 +115,39 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. *
 
 #othersTechnologies {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1.3em;
     margin-bottom: 1em;
 }
+
+
+/* PROJECTS */
+#projects i {
+    font-size: 5rem;
+    color: white;
+}
+
+#projects p {
+    text-align: center;
+}
+
+
+/* SECONDLIFE */
+#secondlife .callout p {
+    color: black;
+    text-align: justify;
+}
+
+#secondlife img {
+    max-height: 100vh;
+    width: auto;
+    display: block;
+}
+
+
+/* SOCIAL */
+#social img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
