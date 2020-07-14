@@ -13,9 +13,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. */
 
-// slateblue
-
 $(document).foundation();
+
+const anchors = [
+    'inicio', 
+    'sobremi', 
+    'tecnologias', 
+    
+    'proyectos', 
+    'secondlife-project', 
+    'newspaper-project', 
+    
+    'redes'
+]
 
 const sectionsColor = [
     'tomato', 
@@ -23,7 +33,9 @@ const sectionsColor = [
     'dodgerblue',
 
     'mediumseagreen', 
-    '#d58f60', 
+    '#d58f60',
+    '#303F9F',
+
     'violet'
 ]
 
@@ -34,6 +46,8 @@ const menuColors = [
 
     'rgba(60, 179, 113, 0.7)',
     'rgba(213, 143, 96, 0.7)',
+    'rgba(48, 63, 159, 0.7)',
+
     'rgba(238, 130, 238, 0.7)'
 ]
 
@@ -42,8 +56,8 @@ $(document).ready(function () {
         autoScrolling: true,
         scrollHorizontally: true,
         scrollOverflow: true,
-        sectionsColor: ['tomato', 'orange', 'dodgerblue', 'mediumseagreen', '#d58f60', 'violet'],
-        anchors: ['inicio', 'sobremi', 'tecnologias', 'proyectos', 'articulos', 'redes'],
+        sectionsColor: sectionsColor,
+        anchors: anchors,
 
         afterLoad: function (origin, destination, direction) {
             setMenuTopBackground(menuColors[destination.index])

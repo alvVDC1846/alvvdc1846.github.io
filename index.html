@@ -25,7 +25,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
     <link rel="stylesheet" href="./css/mainstyles.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" integrity="sha512-kDmbIQZ10fxeKP5NSt3+tz77HO42IJiS+YPIirOIKTdokl4LtuXYo3NNvq9mTAF+rzdV1plp0sm9E6nvtVpnFQ==" crossorigin="anonymous" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
@@ -70,7 +70,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
           </div>
 
           <div id="fullpage">
-            <div class="section" id="home">
+            <div id="home" class="section">
               <h1>Álvaro García</h1>
               <h2>Desarrollador de aplicaciones multiplataforma</h2>
               <div class="row">
@@ -105,7 +105,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
                 </p>
               </div>
             </div>
-            <div class="section" id="aboutme">
+            <div id="aboutme" class="section">
               <h1>Sobre mí</h1>
               <h3>Terminados los estudios de Sistemas Microinformáticos en Red (SMR) y Desarrollo de Aplicaciones Multiplataforma (DAM).</h3>
               <h3>Apasionado por la programación y los sistemas informáticos. En continua formación.</h3>
@@ -139,7 +139,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
                 <p id="othersTechnologies">En menor medida Spring Boot, React y Python.</p>
               </div>
             </div>
-            <div class="section" id="projects">
+            <div id="projects" class="section">
               <h1>Proyectos</h1>
               <p><i class="fi-arrow-down"></i></p>
             </div>
@@ -160,7 +160,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
                       Esto se hizo mediante issues, tags y milestones en Gitlab.</p>
                   </div>
                   <div class="column small-12 large-6">
-                    <img src="./img/secondlife/main.png">
+                    <img data-src="./img/secondlife/main.png">
                   </div>
                 </div>
               </div>
@@ -322,6 +322,180 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
                 <a href="#redes"><h2>¿Quiéres saber más?</h2></a>
               </div>
 
+            </div>
+            <div id="newspaper" class="section">
+              <div class="slide">
+                <div class="row">
+                  <h1>Periódico</h1>
+                  <h2>Aplicación Android para periódico en Wordpress</h2>
+
+                  <div class="column small-12 large-6">
+                    <p>Esta aplicación está destinada a periódicos que estén hechos en WordPress. La aplicación obtiene los datos de la API y los muestra de forma visual.</p>
+                    <p>Incluye los datos más relevantes de las publicaciones y su contenido, categorías y marcadores.</p>
+
+                    <p>Este proyecto lo realicé en el periodo de prácticas del ciclo formativo de DAM.</p>
+                  </div>
+
+                  <div class="column small-12 large-6">
+                    <img data-src="./img/newspaper/main.png">
+                  </div>
+                </div>
+              </div>
+            
+              <div class="slide">
+                <h2>Características técnicas</h2>
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    
+                    <div class="card">
+                      <div class="card-divider">
+                        <h6>Backend</h6>
+                      </div>
+
+                      <div class="card-section">
+                        <ul>
+                          <li>API REST v2 de WordPress</li>
+                          <li>SQLite</li>
+                          <li>Room</li>
+                        </ul>                
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <div class="card">
+                      <div class="card-divider">
+                        <h6>Frontend</h6>
+                      </div>
+
+                      <div class="card-section">
+                        <ul>
+                          <li>Android nativo</li>
+                          <li>Kotlin</li>
+                          <li>MVVM</li>
+                          <li>Lifecycle</li>
+                          <li>LiveData</li>
+                          <li>Volley</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Pantalla principal</h2>
+                    <p>La pantalla principal muestra la lista de publicaciones. Desde cada elemento, se puede ver el título de la publicación, la fecha y la imagen y categoría principal. 
+                      Además, está la opción de compartir la publicación o de guardarla en marcadores.</p>
+                    
+                    <p>Para este ejemplo se están obteniendo los datos del periódico estadounidense <a href="https://time.com" target="_blank">Time</a>.</p>
+                  </div>
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/newspaper/home.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Menú lateral</h2>
+                    <p>En el Navigation Drawer se pueden observar las categorías para filtrar las publicaciones de la lista.</p>
+                    <p>Las categorías se obtienen del WordPress en cuestión, en concreto las 19 primeras. La primera posición se deja para el inicio, es decir, la lista completa sin filtrar.</p>
+                    <p>El color para las categorías se obtiene de un array estático en el código, pudiendo cambiarse cuando se desee.</p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/newspaper/drawer.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Paginación</h2>
+                    <p>Al poder tener un gran número de publicaciones creadas un WordPress, sería muy difícil cargar la lista entera por el gran volumen de datos a descargar y procesar. 
+                      Por ello se recurre a la paginación.
+                    </p>
+                    <p>La aplicación se descarga solo las 10 primeras publicaciones de WordPress para mostrarlas en la lista. 
+                      Después, se aumentará el índece de la página y se irán cargando de 10 en 10 los posts conforme el usuario va bajando haciendo scroll.</p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/newspaper/pagination.png">                    
+                  </div>
+                </div>                  
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Detalle de una publicación</h2>
+                    <p>Desde el detalle de una publicación podremos ver la información más relevante de ésta.</p>
+                    <p>Entre los datos mostrados están: imagen y autor de la misma, título, 
+                      fecha de publicación o de actualización (<i class="material-icons">watch_later</i> <i class="material-icons">sync</i>), 
+                      tiempo estimado de lectura (200 palabras por minuto) y contenido.
+                    </p>
+                    <p>Para el color de la barra superior, se utiliza el mismo color que el de la categoría.</p>
+
+                    <div class="callout secondary">
+                      <h5>Carga de datos</h5>
+                      <p>Para recoger todos los datos necesarios de una publicación, se hace uso de los endpoints y objetos Post, Media, User y Category.</p>
+                      <p>Una vez recogidos los datos, mediante el uso de mappers se llega hasta un objeto PostBO, que reune la información necesaria para la aplicación.</p>
+                      <p>La librería utilizada como cliente HTTP es Volley, recibiendo JSON de los endpoints de WordPress y convirtiéndolo a objetos Java con GSON.</p>
+                    </div>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/newspaper/postDetail.png">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Detalle de una imagen</h2>
+                    <p>En el detalle de una publicación podremos clicar en su imagen para poder verla en detalle.</p>
+                    <p>Este nuevo fragmento muestra la imagen a la que se le puede hacer zoom, el autor de la misma así como su descripción.</p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/newspaper/imageDetail.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Marcadores</h2>
+                    <p>Está la opción de añadir una publicación a marcadores. Esto se hace desde su icono (<i class="material-icons">bookmark_border</i> <i class="material-icons">bookmark</i>), ubicado en el elemento de la lista, 
+                      la barra superior del detalle de la publicación y en la parte inferior del detalle, posterior a su lectura.
+                    </p>
+
+                    <div class="callout secondary">
+                      <h5>Persistencia</h5>
+                      <p>La persistencia de los marcadores se realiza en SQLite con la capa de abstracción de Room.</p>
+                      <p>Lo único que se guarda es el identificador del Post, debiendo por tanto obtener toda la información desde WordPress de nuevo cuando queramos visualizar los marcadores.</p>
+                      <p>Esto se hace así para obtener siempre los datos actualizados, ya que podrían ser modificados.</p>
+                    </div>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/newspaper/bookmarks.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <a href="#redes"><h2>¿Quiéres saber más?</h2></a>
+              </div>
             </div>
             <div id="social" class="section">
               <h1>Redes sociales</h1>

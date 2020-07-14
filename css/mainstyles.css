@@ -38,6 +38,11 @@ p {
     color: white;
 }
 
+.callout p {
+    color: black;
+    text-align: justify;
+}
+
 /* Botón hamburguesa, para desplazar el menú */
 .menubotton {
     position: absolute;
@@ -131,15 +136,23 @@ p {
 
 
 /* SECONDLIFE */
-#secondlife .callout p {
-    color: black;
-    text-align: justify;
-}
-
 #secondlife img {
     max-height: 100vh;
     width: auto;
     display: block;
+}
+
+
+/* NEWSPAPER */
+#newspaper img {
+    max-height: 100vh;
+    width: auto;
+    display: block;
+}
+
+#newspaper p a {
+    color: rgba(255, 255, 255, 0.425);
+    text-decoration: underline;
 }
 
 
