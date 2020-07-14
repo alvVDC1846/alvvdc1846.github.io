@@ -23,7 +23,8 @@ const anchors = [
     'proyectos', 
     'secondlife-project', 
     'newspaper-project', 
-    
+
+    'trainingprogression-project',
     'redes'
 ]
 
@@ -36,6 +37,7 @@ const sectionsColor = [
     '#d58f60',
     '#303F9F',
 
+    '#455A64',
     'violet'
 ]
 
@@ -48,6 +50,7 @@ const menuColors = [
     'rgba(213, 143, 96, 0.7)',
     'rgba(48, 63, 159, 0.7)',
 
+    'rgba(69, 90, 100, 0.7)',
     'rgba(238, 130, 238, 0.7)'
 ]
 

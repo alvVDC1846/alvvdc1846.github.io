@@ -143,7 +143,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
               <h1>Proyectos</h1>
               <p><i class="fi-arrow-down"></i></p>
             </div>
-            <div id="secondlife" class="section">
+            <div id="secondlife" class="section project-images">
               <div class="slide">
                 <h1>SecondLife</h1>
                 <h2>
@@ -323,7 +323,7 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
               </div>
 
             </div>
-            <div id="newspaper" class="section">
+            <div id="newspaper" class="section project-images">
               <div class="slide">
                 <div class="row">
                   <h1>Periódico</h1>
@@ -497,6 +497,241 @@ along with ALVVDC1846 Portfolio.  If not, see <https://www.gnu.org/licenses/>. -
                 <a href="#redes"><h2>¿Quiéres saber más?</h2></a>
               </div>
             </div>
+
+            <div id="trainingprogression" class="section project-images">
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-12 column">
+                    <h1>Training Progression</h1>
+                    <h2>Aplicación para seguir el entrenamiento con pesas</h2>
+
+                    <p>Aplicación Android destinada al seguimiento de los entrenamientos con pesas, así como la progresión de los mismos.</p>
+                    <p>El objetivo con este desarrollo es solucionar un problema que puede surgir durante el entrenamiento, la progresión. 
+                      Siendo la progresión indispensable para mejorar a nivel de fuerza e hipertrofia nuestro rendimiento deportivo, es necesario conocer en 
+                      todo momento que hicimos en el anterior entrenamiento del mismo tipo para aumentar de intensidad en el siguiente.
+                    </p>
+                    <p>Training Progression ofrece una solución con dos tipos de progresión 'automática': progresión por peso levantado y progresión completa (peso levantado, series y repeticiones). 
+                    Además, incluye la opción de método Bilbo, ajuste de unidad de peso, copia de seguridad y exportación de datos en CSV para su posterior tratamiento.</p>
+
+                    <p>La filosofía de este proyecto siempre ha sido la de depender del mínimo de servicios posibles, mínimos permisos necesarios y respeto por los datos del usuario. 
+                      Los datos pertenencen al usuario, permanecen en su dispositivo y no los tiene nadie más.
+                    </p>
+
+                    <div class="callout primary">
+                      <h5>Work In Progress</h5>
+                      <p>La aplicación fue desarrollada para el módulo Proyecto Integrado de DAM. A pesar de haber terminado y aprobado este módulo y ciclo, Training Session aún no está terminado. 
+                      Se sigue trabajando en esta aplicación hasta terminarla.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-12 column">
+                    <h2>Características técnicas</h2>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    
+                    <div class="card">
+                      <div class="card-divider">
+                        <h6>Backend</h6>
+                      </div>
+
+                      <div class="card-section">
+                        <ul>
+                          <li>SQLite</li>
+                          <li>Room</li>
+                        </ul>                
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <div class="card">
+                      <div class="card-divider">
+                        <h6>Frontend</h6>
+                      </div>
+
+                      <div class="card-section">
+                        <ul>
+                          <li>Android nativo</li>
+                          <li>Kotlin</li>
+                          <li>MVVM</li>
+                          <li>Lifecycle</li>
+                          <li>LiveData</li>
+                          <li>Navigation</li>
+                          <li>Material</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Inicio</h2>
+                    <p>La aplicación, al abrirla por primera vez, pregunta cuál unidad de peso quiere utilizar el usuario. 
+                      Después, deberá añadir su programa entrenamiento.</p>
+
+                    <div class="callout secondary">
+                      <h5>Tablas y relaciones</h5>
+                      <p>La aplicación consta de las tablas: TrainingSession, Exercises, Workout, Volume.</p>
+                      <p>Las relaciones son tres, todas de uno a muchos. Un TrainingSession tendrá muchos modelos de Exercises, 
+                        un Exercise será entrenado con muchos Workouts, donde en cada Workout se hará varios Volumes (peso y repeticiones).</p>
+                    </div>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/home.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Programa de entrenamiento</h2>
+                    <p>Añadir un entrenamiento consiste en ponerle un nombre (lunes pierna, martes torso...) y crear todos los ejercicios que correspondan. 
+                      Cada ejercicio tendrá también su nombre, así como sus opciones.
+                    </p>
+                    <p>El método Bilbo consiste en una única serie de entre 15 y 50 repeticiones, por lo cual al seleccionar esta opción, 
+                      solo nos dejará añadir una serie al entrenamiento y la progresión completa (la última) no será posible habilitarla.</p>
+                    <p>La progresión por incremento de peso sumará automáticamente en cada entrenamiento el incremento que le configuremos al ejercicio.</p>
+                    <p>En cuanto a la última progresión, nos saldrán los campos de texto mínimo y máximo de series y repeticiones. De esta forma, la progresión será: 
+                      Cuando se alcance el número máximo de repeticiones, se sumará una serie y se reseteará el número de repeticiones al mínimo. 
+                      Si el número de repeticiones y series ya está en el máximo, se resetearán ambos al mínimo y se subirá el peso por el incremento que le pongamos en el ejercicio.
+                    </p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/addExercuse.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Menú lateral</h2>
+                    <p>En la barra superior, si estamos en alguno de los fragmentos principales, nos saldrá el icono de hamburguesa para abrir el menú lateral. 
+                      En caso de estar en otro fragmento que no sea uno principal, se mostrará el icono de la flecha hacia atrás con el fin de facilitar la navegación por la aplicación.
+                    </p>
+                    <p>Desde el menú lateral podemos navegar por otros destinos de la app, incluido el Programa que hemos creado anteriormente, para poder modificarlo.</p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/drawer.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Entrenamientos</h2>
+                    <p>En la primera opción del menú lateral accedemos a lo que usuario utilizará más, el registro de entrenamientos.</p>
+                    <p>Desde aquí el usuario podrá añadir diariamente los entrenamientos que haga, escogiendo que día o tipo de entrenamiento ha hecho 
+                      y añadiendo el volumen realizado para cada ejercicio.
+                    </p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/selectExerciseForRecord.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Ejercicios</h2>
+                    <p>Se añadirá el volumen realizado para cada ejercicio y la fecha de cuando se realizó. También se podrá añadir una nota opcional para cada entrenamiento de un ejercicio, 
+                      por ejemplo, sensaciones.</p>
+                    <p>Con fin orientativo e informativo, se añadirá en el volumen lo último realizado en el mismo ejercicio. 
+                      Si la progresión en el ejercicio está activada, se añadirá con ésta agregada.
+                    </p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/addingWorkout-savedVolumes.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Historial</h2>
+                    <p>En ocasiones, nos gustará conocer como hemos estado progresando a lo largo del tiempo. Para ello está el historial.</p>
+                    <p>Desde el historial, podremos visualizar cada uno de los entrenamientos (por ejercicio) que hemos realizado. 
+                      También podremos eliminar entradas individualmente deslizando la tarjeta hacia la derecha.
+                    </p>
+                    <p>La opción más interesante se encuentra en el menú superior derecho, exportar. Al seleccionar esta opción, 
+                      generará un archivo en formato CSV que guardará donde le digamos. Con este formato, podremos abrir y tratar los datos en una hoja de cálculo, 
+                      procesándolos con una gran flexibilidad.
+                    </p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/history.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <div class="small-12 large-6 column">
+                    <h2>Ajustes</h2>
+                    <p>La pantalla de ajustes nos da algunas opciones interesantes.</p>
+                    <p>El índice del método Bilbo por defecto es 0.03, siendo el establecido por el autor del mismo. 
+                      Podremos cambiarlo si este valor no se adecua bien a nuestra progesión. Al hacerlo, para calcular la máxima repetición 
+                      estimada se utilizará este índice.</p>
+                    
+                    <p>La unidad de peso viene establecida por la que pusimos al iniciar Training Progression por primera vez. 
+                      Siempre la podrás cambiar desde aquí, actualizándose así todos los registros y mostrándose la unidad correspondiente (kg o lb).
+                    </p>
+
+                    <p>Finalmente contamos con la copia de seguridad. Exportarla significará guardar la base de datos entera de la aplicación en la 
+                      ruta que queramos de nuestro teléfono móvil. Al importarla, se eliminarán todos los datos previos para reemplazarlos por esta base de datos importada.
+                    </p>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <img data-src="./img/trainingprogression/settings.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="row">
+                  <h2 style="margin-bottom: 2em;">Video de la presentación</h2>
+                  <div class="small-12 large-6 column">
+                    <div class="responsive-embed widescreen">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/MdCMzZrHdGE?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <div class="small-12 large-6 column">
+                    <div class="responsive-embed widescreen">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/oH3TiZtFI38?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <a href="#redes"><h2>¿Quiéres saber más?</h2></a>
+              </div>
+
+            </div>
+
             <div id="social" class="section">
               <h1>Redes sociales</h1>
               <h3>Conóceme más:</h3>
